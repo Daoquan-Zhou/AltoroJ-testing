@@ -1,3 +1,11 @@
+name: CodeSweep Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   codesweep:
     runs-on: ubuntu-latest
