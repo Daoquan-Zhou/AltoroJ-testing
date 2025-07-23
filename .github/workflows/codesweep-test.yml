@@ -1,20 +1,19 @@
 name: CodeSweep Test
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    types: [opened, synchronize]
 
 jobs:
-  codesweep:
+  scan:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for CodeSweep to get full diff history
 
-      - name: Run CodeSweep Action (test version)
+      - name: Run CodeSweep (patched version)
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@mattmurp-patch-1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HOME: /github/workspace
