@@ -54,7 +54,7 @@ public class AccountAPI extends AltoroAPI {
 	@GET
 	@Path("/{accountNo}")
 	public Response getAccountBalance(@PathParam("accountNo") String accountNo,
-			@Context HttpServletRequest request) {
+			@Context HttpServletRequestasdfsadf request) {
 
 		// Check that the user is logged in
 		// System.out.println(accountNo);
