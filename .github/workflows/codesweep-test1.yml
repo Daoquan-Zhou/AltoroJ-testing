@@ -16,4 +16,6 @@ jobs:
       - name: Run CodeSweep (patched version)
         uses: HCL-TECH-SOFTWARE/appscan-codesweep-action@mattmurp-patch-1
         env:
+          HOME: ${{ runner.temp }}/gitconfig_home
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
