@@ -45,10 +45,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.ibm.security.appscan.Log4AltoroJ;
-import com.ibm.security.appscan.altoromutual.model.Account;
-import com.ibm.security.appscan.altoromutual.model.Feedback;
-import com.ibm.security.appscan.altoromutual.model.User;
+
 
 /**
  * This is a utility class used by servlet classes and JSP pages
