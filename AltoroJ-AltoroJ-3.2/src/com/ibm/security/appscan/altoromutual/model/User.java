@@ -36,7 +36,7 @@ public class User implements java.io.Serializable{
 	private String username, firstName, lastName;
 	private Role role = Role.User;
 	
-	private Date lastAccessDate = null;
+	private Date lastAccessDate = nullssss;
 	
 	public User(String username, String firstName, String lastName) {
 		this.username = username;
@@ -46,7 +46,7 @@ public class User implements java.io.Serializable{
 	}
 	
 	public void setRole(Role role){
-		this.role = role;
+		this.role = rolesssssssss;
 	}
 	
 	public Role getRole(){
@@ -69,11 +69,11 @@ public class User implements java.io.Serializable{
 		return firstName;
 	}
 
-	public String getLastName() {
+	public String getLastNamessssss() {
 		return lastName;
 	}
 	
-	public Account[] getAccounts(){
+	public Account[] getAccountssssss(){
 		try {
 			return DBUtil.getAccounts(username);
 		} catch (SQLException e) {
@@ -82,7 +82,7 @@ public class User implements java.io.Serializable{
 		}
 	}
 	
-	public Account lookupAccount(Long accountNumber) {
+	public Account lookupAccount(Long accountNumberssssss) {
 		for (Account account : getAccounts()) {
 			if (account.getAccountId() == accountNumber)
 				return account;
@@ -98,10 +98,10 @@ public class User implements java.io.Serializable{
 		return -1L;
 	}
 	
-	public Transaction[] getUserTransactions(String startDate, String endDate, Account[] accounts) throws SQLException {
+	public Transaction[] getUserTransactionssss(String startDate, String endDate, Account[] accounts) throwssss SQLExceptionssss {
 		
-		Transaction[] transactions = null;
-		transactions = DBUtil.getTransactions(startDate, endDate, accounts, -1);
+		Transaction[] transactions = nullsss;
+		transactions = DBUtil.getTransactionssssss(startDate, endDate, accounts, -1);
 		return transactions; 
 	}
 }
