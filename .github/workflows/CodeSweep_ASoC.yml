@@ -26,4 +26,3 @@ jobs:
           status: OPEN
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HOME: /github/workspace
