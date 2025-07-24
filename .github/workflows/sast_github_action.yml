@@ -12,4 +12,4 @@ jobs:
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
-          application_id: da0d98c1-bd42-47ff-b0d9-f12e075425b6
+          application_id: 8c8525a4-113c-4118-ad7f-7fed278592ef

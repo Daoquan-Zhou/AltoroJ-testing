@@ -21,12 +21,8 @@ jobs:
           asoc_secret: ${{ secrets.ASOC_SECRET }}
           service_url: https://cloud.appscan.com/
           publish_on_merge: false
-          application_id: 622cb53e-12b2-4ce7-9581-8df10a9fb184
-          issue_status: "inprogress"
+          application_id: 8c8525a4-113c-4118-ad7f-7fed278592ef
           scan_base_name: "CodeSweep"
           personal_scan: true
-          status: failure         # Fail PR if issues are found
-          acceptssl: true        # Set to true only for self-signed certs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HOME: /github/workspace
