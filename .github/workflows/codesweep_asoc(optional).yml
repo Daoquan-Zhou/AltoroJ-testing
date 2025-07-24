@@ -26,4 +26,3 @@ jobs:
           personal_scan: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HOME: /github/workspace
