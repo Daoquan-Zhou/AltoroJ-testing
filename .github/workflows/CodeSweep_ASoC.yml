@@ -20,8 +20,8 @@ jobs:
           asoc_key: ${{ secrets.ASOC_KEY }}
           asoc_secret: ${{ secrets.ASOC_SECRET }}
           service_url: https://cloud.appscan.com/
-          publish_on_merge: false
-          application_id: 8c8525a4-113c-4118-ad7f-7fed278592ef
+          publish_on_merge: true
+          application_id: 591c9678-9f18-4883-8afd-e88dfb800fac
           issue_status: OPEN
           status: OPEN
         env:
